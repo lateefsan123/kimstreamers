@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vh;
+    
+}
+
+.whole {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    justify-self: center;
+    height: 100%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr) ) ;
+    gap: 10px;
+}
+
+.streamers {
+    background-color: red;
+    color: white;
+    border: 3px solid black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    height: 50%;
+
+}
+
+.streamers.live {
+    background-color: rgb(192, 108, 192);
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {background-color: rgb(192, 108, 192);
+
+    }
+    50% {
+        background-color: blueviolet;
+    }
+
+    100% {
+        background-color: rgb(130, 1, 130);
+    }
+    
+}
+
+
+a{
+    text-decoration: none;
+}
