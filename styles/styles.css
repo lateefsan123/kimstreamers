@@ -35,6 +35,7 @@ body {
     align-items: center;
     font-size: larger;
     height: 50%;
+    cursor: pointer;
 
 }
 
@@ -60,4 +61,11 @@ body {
 
 a{
     text-decoration: none;
+}
+
+.zyk {
+    background-image: url("image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

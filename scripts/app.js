@@ -54,3 +54,9 @@ async function init() {
 init();
 // Run it on load
 
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('Kim Streamers is now a PWA! 🎉'))
+      .catch(err => console.error('Service Worker registration failed: ', err));
+  }
+  
